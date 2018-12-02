@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+
+const config = require('../src/config')
+const { createServer } = require('../src/server')
+
+const server = createServer(config)
+server.listen(config.port)
+
+console.log(`Server listening to port '${config.port}'`)
