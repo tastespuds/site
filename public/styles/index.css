@@ -40,6 +40,8 @@ body {
 
 .pitch {
   display: flex;
+  overflow: auto;
+  position: relative;
   flex-direction: row;
   justify-content: center;
 }
@@ -48,7 +50,7 @@ body {
   content: '';
 
   display: block;
-  position: fixed;
+  position: absolute;
   left: 0;
   right: 0;
   z-index: -1;
@@ -67,6 +69,7 @@ body {
 
 .pitch-left {
   width: 400px;
+  order: 1;
   color: white;
   padding: 0 1em;
 }
@@ -87,6 +90,7 @@ body {
 
 .pitch-right {
   width: 300px;
+  order: 2;
   height: 500px;
   align-items: center;
   justify-content: center;
@@ -98,10 +102,10 @@ body {
 }
 
 .copyright-container {
+  padding: 20px;
   text-align: center;
 }
 
 .copyright {
-  color: white;
-  font-weight: bold;
+  color: black;
 }
