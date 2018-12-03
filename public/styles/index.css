@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.title {
+  display: flex;
+  padding: 20px 0;
+  font-size: 42px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.title-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  padding: 0 20px;
+  color: tomato;
+}
+
+.title-text-beta {
+  margin-left: 2px;
+  font-size: 0.4em;
+  color: silver;
+}
+
+.title-logo {
+  display: block;
+  height: 2.1em;
+}
+
+.pitch {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.pitch:before {
+  content: '';
+
+  display: block;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+
+  filter: blur(8px);
+  background: url('/assets/main-background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.pitch-left, .pitch-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.pitch-left {
+  width: 400px;
+  color: white;
+  padding: 0 1em;
+}
+
+.pitch-title {
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 4em;
+  padding: 0 0;
+}
+
+.pitch-icons {
+  padding: 1em 0;
+}
+
+.pitch-google-play-icon, .pitch-app-store-icon {
+  height: 3em;
+}
+
+.pitch-right {
+  width: 300px;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+}
+
+.pitch-iphone-se-screenshot {
+  width: 12.5em;
+  height: auto;
+}
+
+.copyright-container {
+  text-align: center;
+}
+
+.copyright {
+  color: white;
+  font-weight: bold;
+}
