@@ -1,0 +1,9 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.privacy {
+  width: 50em;
+}
