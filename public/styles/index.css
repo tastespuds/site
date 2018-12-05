@@ -106,3 +106,20 @@ body {
 .copyright {
   color: white;
 }
+
+.footer-menu {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
+
+.footer-menu-item {
+  color: white;
+  margin: 0 1em;
+  text-decoration: none;
+}
+
+.footer-menu-item:hover {
+  color: white;
+  text-decoration: underline;
+}
